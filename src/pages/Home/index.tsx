@@ -71,9 +71,9 @@ class Home extends React.Component {
                 I built this application using <Emp>React, Typescript</Emp> and
                 the
                 <Emp>Material UI</Emp> framework. This is my experiment with
-                responsive UI, so feel free to resize the window or access this
-                page on your mobile devices! Please do not judge my poor design
-                capabilities.
+                <Emp>responsive UI</Emp>, so feel free to resize the window or
+                access this page on your mobile devices! Please do not judge my
+                poor design capabilities.
               </Typography>
             </Card>
             <Card
