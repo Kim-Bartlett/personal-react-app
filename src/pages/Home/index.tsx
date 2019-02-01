@@ -11,6 +11,7 @@ import {
 import kim from "./kim.jpeg";
 import franci from "./franci.jpg";
 import pondi from "./pondi.jpg";
+import { red } from "@material-ui/core/colors";
 
 function Emp(props: any) {
   return <span style={{ color: "#4286f4", fontWeight: 500 }} {...props} />;
@@ -69,8 +70,7 @@ class Home extends React.Component {
                 style={{ fontSize: "16px", marginTop: "15px" }}
               >
                 I built this application using <Emp>React, Typescript</Emp> and
-                the
-                <Emp>Material UI</Emp> framework. This is my experiment with
+                the <Emp>Material UI</Emp> framework. This is my experiment with{" "}
                 <Emp>responsive UI</Emp>, so feel free to resize the window or
                 access this page on your mobile devices! Please do not judge my
                 poor design capabilities.
@@ -95,7 +95,7 @@ class Home extends React.Component {
                     Rivers Agile Solutions
                   </a>
                 </Emp>
-                , but I am always open to new oppurtunities or picking up an
+                , but I am always open to new opportunities or picking up an
                 interesting project on the side. If you'd like to work with me
                 or know someone who would, feel free to say hello! My contact
                 information is located in the footer of this application.

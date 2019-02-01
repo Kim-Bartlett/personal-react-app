@@ -30,7 +30,7 @@ class TechChip extends React.Component<TechChipProps> {
     const { core, hidden, iconType, name } = this.props;
 
     return (
-      <Zoom in={!hidden}>
+      <Zoom in unmountOnExit>
         <Chip
           color={core ? "secondary" : "default"}
           icon={<TechIcon type={iconType} />}

@@ -18,16 +18,19 @@ const TechComponent: React.SFC<TechComponentProps> = ({
   filters,
   handleCheck
 }) => {
-  const techCards = data.map(d => (
-    <Grid
-      style={{ marginTop: "12px", textAlign: "center" }}
-      item
-      xs={12}
-      md={5}
-    >
-      <TechCard chipProps={d.data} title={d.label} />
-    </Grid>
-  ));
+  const techCards = data.map(
+    d =>
+      d.data.length > 0 && (
+        <Grid
+          style={{ marginTop: "12px", textAlign: "center" }}
+          item
+          xs={12}
+          md={5}
+        >
+          <TechCard chipProps={d.data} title={d.label} />
+        </Grid>
+      )
+  );
 
   const filterBoxes = filters.map(filter => (
     <FilterBox

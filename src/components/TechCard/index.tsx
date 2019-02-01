@@ -13,7 +13,7 @@ class TechCard extends React.Component<TechCardProps> {
     const { chipProps, title } = this.props;
 
     return (
-      <Grow in>
+      <Grow in unmountOnExit>
         <div>
           <Typography style={{ fontSize: "14px" }} variant="overline">
             {title}

@@ -5,6 +5,7 @@ import Navigation from "../Navigation";
 import History from "../../pages/Career";
 import Tech from "../../pages/Tech";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
+import Helmet from "react-helmet";
 
 interface State {
   themeMode: "light" | "dark";
@@ -41,24 +42,27 @@ class Router extends React.Component {
     return (
       <MuiThemeProvider theme={theme}>
         <BrowserRouter>
-          <div>
+          <div
+            style={{
+              // backgroundColor:
+              //   this.state.themeMode === "dark" ? "#2d2d2d" : "inherit",
+              height: "100vh"
+            }}
+          >
             <Navigation
               toggleTheme={this.toggleTheme}
               darkTheme={this.state.themeMode === "dark"}
             />
             <Switch>
-              <div
-                style={{
-                  backgroundColor:
-                    this.state.themeMode === "dark" ? "#2d2d2d" : "inherit",
-                  height: "100vh",
-                  marginTop: "48px"
-                }}
-              >
+              <div style={{ paddingTop: "40px" }}>
                 <Route exact path="/" component={Home} />
                 <Route path="/career" component={History} />
                 <Route path="/tech" component={Tech} />
-                <div style={{ height: "50px" }} />
+                <div
+                  style={{
+                    height: "50px"
+                  }}
+                />
               </div>
             </Switch>
           </div>

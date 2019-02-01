@@ -44,10 +44,16 @@ export default class Tech extends React.Component<Props & State> {
       filters.length > 0
         ? techData.map(section => ({
             label: section.label,
-            data: section.data.map(o =>
+            data: section.data.filter(o =>
               // TODO: alternative to using as any here?
-              filters.includes(o.iconType as any) ? o : { ...o, hidden: true }
+              //   filters.includes(o.iconType as any)
+              //     ? o
+              //     : { ...o, hidden: true }
+              filters.includes(o.iconType as any)
             )
+            //   .sort((a, b) => {
+            //     return a === b ? 0 : a.hidden ? 1 : -1;
+            //   })
           }))
         : techData;
 

@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-
 import Router from "./components/Router";
 
 document.addEventListener("DOMContentLoaded", () => {

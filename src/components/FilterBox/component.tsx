@@ -10,7 +10,6 @@ interface FilterBoxComponentProps {
 
 const FilterBox: React.SFC<FilterBoxComponentProps> = ({
   handleCheck,
-  label,
   value
 }) => {
   return (
