@@ -69,12 +69,7 @@ const workHistory = [
 class Career extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          paddingTop: "4%",
-          verticalAlign: "center"
-        }}
-      >
+      <div className="page-wrapper" style={{ paddingTop: "4%" }}>
         <Grid container alignItems="flex-start" justify="space-around">
           {workHistory.map(history => (
             <Grow in>

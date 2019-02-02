@@ -41,11 +41,7 @@ const TechComponent: React.SFC<TechComponentProps> = ({
   ));
 
   return (
-    <div
-      style={{
-        padding: "2% 15%"
-      }}
-    >
+    <div className="page-wrapper" style={{ padding: "2% 15%" }}>
       <Grid container direction="row" justify="space-around">
         <Grid item xs={12}>
           <Grid container direction="row" justify="space-around">

@@ -11,7 +11,6 @@ import {
 import kim from "./kim.jpeg";
 import franci from "./franci.jpg";
 import pondi from "./pondi.jpg";
-import { red } from "@material-ui/core/colors";
 
 function Emp(props: any) {
   return <span style={{ color: "#4286f4", fontWeight: 500 }} {...props} />;
@@ -20,7 +19,7 @@ function Emp(props: any) {
 class Home extends React.Component {
   render() {
     return (
-      <div style={{ padding: "1%" }}>
+      <div className="page-wrapper" style={{ padding: "1%" }}>
         <Grid container justify="center">
           <Grid item xs={10} md={8} lg={6}>
             <GridList

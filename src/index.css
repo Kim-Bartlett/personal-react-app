@@ -1,8 +1,4 @@
-html,
-body,
-#root,
-#root > div,
-.App {
+#page-wrapper {
   height: 100vh;
 }
 

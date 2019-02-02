@@ -3,7 +3,13 @@ import React from "react";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 
-import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+import {
+  Card,
+  CardContent,
+  Typography,
+  Grid,
+  IconButton
+} from "@material-ui/core";
 
 interface CardProps {
   company: string;

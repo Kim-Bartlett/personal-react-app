@@ -2,10 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "../../pages/Home";
 import Navigation from "../Navigation";
-import History from "../../pages/Career";
+import Career from "../../pages/Career";
 import Tech from "../../pages/Tech";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
-import Helmet from "react-helmet";
 
 interface State {
   themeMode: "light" | "dark";
@@ -39,14 +38,23 @@ class Router extends React.Component {
       }
     });
 
+    const backgroundColor =
+      this.state.themeMode === "dark" ? "#2d2d2d" : "inherit";
+
+    // const home = (
+    //   <div style={{ backgroundColor: backgroundColor }}>
+    //     <Home />
+    //   </div>
+    // );
+
     return (
       <MuiThemeProvider theme={theme}>
         <BrowserRouter>
           <div
             style={{
-              // backgroundColor:
-              //   this.state.themeMode === "dark" ? "#2d2d2d" : "inherit",
-              height: "100vh"
+              backgroundColor:
+                this.state.themeMode === "dark" ? "#2d2d2d" : "inherit",
+              minHeight: "100vh"
             }}
           >
             <Navigation
@@ -56,7 +64,7 @@ class Router extends React.Component {
             <Switch>
               <div style={{ paddingTop: "40px" }}>
                 <Route exact path="/" component={Home} />
-                <Route path="/career" component={History} />
+                <Route path="/career" component={Career} />
                 <Route path="/tech" component={Tech} />
                 <div
                   style={{
