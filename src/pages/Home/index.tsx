@@ -19,7 +19,7 @@ function Emp(props: any) {
 class Home extends React.Component {
   render() {
     return (
-      <div className="page-wrapper" style={{ padding: "1%" }}>
+      <div className="page-wrapper">
         <Grid container justify="center">
           <Grid item xs={10} md={8} lg={6}>
             <GridList
@@ -51,9 +51,10 @@ class Home extends React.Component {
                 variant="subheading"
                 style={{ fontSize: "16px", marginTop: "15px" }}
               >
-                Hi, my name is <Emp>Kim Bartlett</Emp>. I'm a full-stack
-                software engineer with a passion for learning the latest
-                technologies and implementing them with software best practices.
+                Hi, my name is <Emp>Kim Bartlett</Emp>, and these are my cats,
+                Franci and Pondi. I'm a full-stack software engineer with a
+                passion for learning the latest technologies and implementing
+                them with software best practices.
               </Typography>
             </Card>
             <Card

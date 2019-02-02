@@ -37,5 +37,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
+  ],
+  "moduleNameMapper": {
+    "@components\\/(.*)$": "<rootDir>/src/components/$1",
+    "@data\\/(.*)$": "<rootDir>/src/data/$1",
+    "@pages\\/(.*)$": "<rootDir>/src/pages/$1"
+  },
+  "roots": [
+    "<rootDir>/src/"
   ]
 }

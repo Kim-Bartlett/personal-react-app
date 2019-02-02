@@ -38,15 +38,6 @@ class Router extends React.Component {
       }
     });
 
-    const backgroundColor =
-      this.state.themeMode === "dark" ? "#2d2d2d" : "inherit";
-
-    // const home = (
-    //   <div style={{ backgroundColor: backgroundColor }}>
-    //     <Home />
-    //   </div>
-    // );
-
     return (
       <MuiThemeProvider theme={theme}>
         <BrowserRouter>
@@ -62,13 +53,13 @@ class Router extends React.Component {
               darkTheme={this.state.themeMode === "dark"}
             />
             <Switch>
-              <div style={{ paddingTop: "40px" }}>
+              <div style={{ paddingTop: "60px" }}>
                 <Route exact path="/" component={Home} />
                 <Route path="/career" component={Career} />
                 <Route path="/tech" component={Tech} />
                 <div
                   style={{
-                    height: "50px"
+                    height: "65px"
                   }}
                 />
               </div>

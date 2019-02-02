@@ -69,7 +69,6 @@ class Navigation extends React.Component<Props & WithStyles, State> {
               <LinkTab label="About Me" to="/" />
               <LinkTab label="Career" to="/career" />
               <LinkTab label="Tech" to="/tech" />
-              <LinkTab label="Education" to="/education" />
             </Tabs>
           </AppBar>
           <AppBar position="static" style={{ position: "fixed", bottom: "0" }}>

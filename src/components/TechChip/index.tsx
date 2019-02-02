@@ -20,14 +20,13 @@ export type ChipIconType =
 
 export interface TechChipProps {
   core?: boolean;
-  hidden?: boolean;
   iconType: ChipIconType;
   name: string;
 }
 
 class TechChip extends React.Component<TechChipProps> {
   render() {
-    const { core, hidden, iconType, name } = this.props;
+    const { core, iconType, name } = this.props;
 
     return (
       <Zoom in unmountOnExit>
