@@ -1,11 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import {
-  faJava,
-  faPython,
-  faJsSquare
-} from "@fortawesome/free-brands-svg-icons";
-import { faGem } from "@fortawesome/free-regular-svg-icons";
+import { faJava, faPython, faJsSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGem } from '@fortawesome/free-regular-svg-icons';
 import {
   faAtom,
   faCode,
@@ -16,9 +12,9 @@ import {
   faVial,
   faBox,
   faPlug
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface TechIconProps {
   type: string;
@@ -29,43 +25,43 @@ class TechIcon extends React.Component<TechIconProps> {
     let icon;
 
     switch (this.props.type) {
-      case "api":
+      case 'api':
         icon = <FontAwesomeIcon icon={faPlug} />;
         break;
-      case "db":
+      case 'db':
         icon = <FontAwesomeIcon icon={faDatabase} />;
         break;
-      case "infra":
+      case 'infra':
         icon = <FontAwesomeIcon icon={faCogs} />;
         break;
-      case "java":
+      case 'java':
         icon = <FontAwesomeIcon icon={faJava} />;
         break;
-      case "js":
+      case 'js':
         icon = <FontAwesomeIcon icon={faJsSquare} />;
         break;
-      case "language":
+      case 'language':
         icon = <FontAwesomeIcon icon={faCode} />;
         break;
-      case "manage":
+      case 'manage':
         icon = <FontAwesomeIcon icon={faClipboardList} />;
         break;
-      case "package_manager":
+      case 'package_manager':
         icon = <FontAwesomeIcon icon={faBox} />;
         break;
-      case "python":
+      case 'python':
         icon = <FontAwesomeIcon icon={faPython} />;
         break;
-      case "react":
+      case 'react':
         icon = <FontAwesomeIcon icon={faAtom} />;
         break;
-      case "ruby":
+      case 'ruby':
         icon = <FontAwesomeIcon icon={faGem} />;
         break;
-      case "test":
+      case 'test':
         icon = <FontAwesomeIcon icon={faVial} />;
         break;
-      case "version_control":
+      case 'version_control':
         icon = <FontAwesomeIcon icon={faCodeBranch} />;
         break;
       default:

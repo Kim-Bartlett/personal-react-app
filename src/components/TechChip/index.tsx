@@ -1,22 +1,22 @@
-import React from "react";
+import React from 'react';
 
-import { Chip, Zoom } from "@material-ui/core";
-import TechIcon from "../TechIcon";
+import { Chip, Zoom } from '@material-ui/core';
+import TechIcon from '../TechIcon';
 
 export type ChipIconType =
-  | "api"
-  | "db"
-  | "infra"
-  | "java"
-  | "js"
-  | "language"
-  | "manage"
-  | "package_manager"
-  | "python"
-  | "react"
-  | "ruby"
-  | "test"
-  | "version_control";
+  | 'api'
+  | 'db'
+  | 'infra'
+  | 'java'
+  | 'js'
+  | 'language'
+  | 'manage'
+  | 'package_manager'
+  | 'python'
+  | 'react'
+  | 'ruby'
+  | 'test'
+  | 'version_control';
 
 export interface TechChipProps {
   core?: boolean;
@@ -31,10 +31,10 @@ class TechChip extends React.Component<TechChipProps> {
     return (
       <Zoom in unmountOnExit>
         <Chip
-          color={core ? "secondary" : "default"}
+          color={core ? 'secondary' : 'default'}
           icon={<TechIcon type={iconType} />}
           label={name}
-          style={{ margin: "2px", padding: "2px 2px 2px 10px" }}
+          style={{ margin: '2px', padding: '2px 2px 2px 10px' }}
         />
       </Zoom>
     );

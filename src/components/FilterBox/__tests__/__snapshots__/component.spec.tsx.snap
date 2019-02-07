@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterBoxComponent /> matches snapshot 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "padding": "3px",
+    }
+  }
+>
+  <span
+    className="MuiButtonBase-root-17 MuiIconButton-root-11 MuiPrivateSwitchBase-root-7 MuiCheckbox-root-1 MuiCheckbox-colorSecondary-6"
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={null}
+  >
+    <span
+      className="MuiIconButton-label-16"
+    >
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-20"
+        focusable="false"
+        role="presentation"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+        />
+      </svg>
+      <input
+        className="MuiPrivateSwitchBase-input-10"
+        data-indeterminate={false}
+        onChange={[Function]}
+        type="checkbox"
+        value="language"
+      />
+    </span>
+    <span
+      className="MuiTouchRipple-root-29"
+    />
+  </span>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "left": "-2px",
+        "position": "relative",
+        "top": "2px",
+        "width": "fit-content",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#757575",
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-code fa-w-20 "
+        data-icon="code"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 640 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

@@ -1,15 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import LocationOnIcon from "@material-ui/icons/LocationOn";
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-import {
-  Card,
-  CardContent,
-  Typography,
-  Grid,
-  IconButton
-} from "@material-ui/core";
+import { Card, CardContent, Typography, Grid, IconButton } from '@material-ui/core';
 
 interface CardProps {
   company: string;
@@ -22,17 +16,10 @@ interface CardProps {
 
 class WorkHistoryCard extends React.Component<CardProps> {
   render() {
-    const {
-      company,
-      description,
-      endDate,
-      location,
-      startDate,
-      title
-    } = this.props;
+    const { company, description, endDate, location, startDate, title } = this.props;
 
     return (
-      <Card style={{ marginBottom: "16px" }}>
+      <Card style={{ marginBottom: '16px' }}>
         <CardContent>
           <Typography noWrap variant="overline">
             {title}
@@ -49,29 +36,29 @@ class WorkHistoryCard extends React.Component<CardProps> {
           <Grid container md justify="space-between">
             <Grid item xs={6}>
               <Typography variant="caption">
-                {" "}
+                {' '}
                 <LocationOnIcon
                   style={{
-                    fontSize: "16px",
-                    paddingRight: "1px",
-                    position: "relative",
-                    top: "2px"
+                    fontSize: '16px',
+                    paddingRight: '1px',
+                    position: 'relative',
+                    top: '2px'
                   }}
                 />
                 {location}
               </Typography>
             </Grid>
-            <Grid item xs={6} style={{ textAlign: "end" }}>
+            <Grid item xs={6} style={{ textAlign: 'end' }}>
               <Typography variant="caption">
                 <CalendarTodayIcon
                   style={{
-                    fontSize: "16px",
-                    paddingRight: "2px",
-                    position: "relative",
-                    top: "2px"
+                    fontSize: '16px',
+                    paddingRight: '2px',
+                    position: 'relative',
+                    top: '2px'
                   }}
                 />
-                {`${startDate} - ${endDate ? endDate : "present"}`}
+                {`${startDate} - ${endDate ? endDate : 'present'}`}
               </Typography>
             </Grid>
           </Grid>

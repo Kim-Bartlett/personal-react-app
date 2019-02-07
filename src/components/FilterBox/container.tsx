@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import FilterBoxComponent from "./component";
-import { TechFilter } from "../../pages/Tech/container";
+import FilterBoxComponent from './component';
+import { TechFilter } from '../../pages/Tech/container';
 
-interface FilterBoxProps {
+export interface FilterBoxProps {
   label: string;
   value: TechFilter;
   handleFilter(checked: boolean, filter: TechFilter): void;
@@ -19,9 +19,6 @@ export default class FilterBox extends React.Component<FilterBoxProps> {
   }
 
   handleCheck = (e: React.ChangeEvent, checked: boolean) => {
-    console.log(e.currentTarget.getAttribute("value"));
-    this.props.handleFilter(checked, e.currentTarget.getAttribute(
-      "value"
-    ) as TechFilter);
+    this.props.handleFilter(checked, e.currentTarget.getAttribute('value') as TechFilter);
   };
 }

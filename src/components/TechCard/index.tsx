@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Card, CardContent, Typography, Grow } from "@material-ui/core";
-import TechChip, { TechChipProps } from "../TechChip";
+import { Card, CardContent, Typography, Grow } from '@material-ui/core';
+import TechChip, { TechChipProps } from '../TechChip';
 
 interface TechCardProps {
   chipProps: TechChipProps[];
@@ -15,7 +15,7 @@ class TechCard extends React.Component<TechCardProps> {
     return (
       <Grow in unmountOnExit>
         <div>
-          <Typography style={{ fontSize: "14px" }} variant="overline">
+          <Typography style={{ fontSize: '14px' }} variant="overline">
             {title}
           </Typography>
           <Card>
